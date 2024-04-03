@@ -1,0 +1,26 @@
+El flujo, por lo que pienso hasta el momento sería algo así:
+
+Pasos iniciales
+
+1) Abrir el archivo
+2) Desde el archivo, asignar una variable tipo STRING "cantidad" que tenga el valor de la primera línea
+3) Crear una lista de tipo "Pieza" -el struct definido- (probablemente con new) de "cantidad" espacios, donde se irán almacenando las piezas encontradas y sus respectivas posicion. Ojo: La lista está creada y es el struct "Tablero".
+4) Empezar a recorrer, con dos for anidados, posición por posición las piezas del tablero. Cada vez que se encuentre algo != ".", almacenar el resultado en el arreglo de (3)
+
+
+Verificación JaqueMate: Pasar por referencia el arreglo con las posiciones a la función 
+5) Una vez encontradas las piezas hay que armar una matriz (8X8) que será el nuevo tablero, compuestas únicamente por espacios con "."
+6) Recorrer la lista (3) y verificar que NO SEA EL REY. Si no es el rey se marcarán todas las cacillas donde la pieza se pueda mover con una "x" de la matriz (5). repetir hasta terminar con todas las piezas.
+7) Ahora sí, recorrer la lista (3) hasta encontrar al rey. Marcar todas las casillas a las que se puede mover con una "O" SOLO SI NO HAY UNA "x" ya en la casilla.
+8) Recorrer la matriz (5) y verificar la existencia de una o más "O". Si hay, no está en jaque, sino hay, está en jaque. 
+9) Retornar según corresponda. 
+
+Retorno
+10) desde main, si se retornó true, avisar que no hay jaque (No). Si se retornó false, avisar que si hay jaque (Si)
+
+
+
+Para ver loos posibles movimientos de las piezas debo sacar lso cálculos en base a i y j !!!!! para hacer una generalización!!!!
+
+
+g

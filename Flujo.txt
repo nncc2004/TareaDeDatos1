@@ -23,4 +23,4 @@ Retorno
 Para ver loos posibles movimientos de las piezas debo sacar lso cálculos en base a i y j !!!!! para hacer una generalización!!!!
 
 
-g
+No me tinca

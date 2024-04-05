@@ -19,6 +19,38 @@ bool tableroEnJaqueMate(Tablero &tablero, int cantPiezas){
 		cout<<tablero.piezas_tablero[i].simbolo<<": (";
 		cout<<tablero.piezas_tablero[i].x<<","<<tablero.piezas_tablero[i].y<<")\n";
 	}
+	cout<<"\n";
+	//Se crea la matriz de 8x8 y se llena con "v" (de vacío). Luego se imprime con forma matricial
+	char matriz[8][8];
+	for(int j = 0; j<8; j++){
+		for(int i = 0; i<8; i++){
+			matriz[j][i] = '_';
+		}
+	}
+	
+	for(int j = 0; j<8; j++){
+		for(int i = 0; i<8; i++){
+			cout<<matriz[j][i];
+		}
+		cout<<"\n";
+	}
+	for(int i = 0; i<cantPiezas; i++){
+		matriz[tablero.piezas_tablero[i].x][tablero.piezas_tablero[i].y] = tablero.piezas_tablero[i].simbolo;
+	}
+	
+	cout<<"\n";
+	for(int j = 0; j<8; j++){
+		for(int i = 0; i<8; i++){
+			cout<<matriz[j][i];
+		}
+		cout<<"\n";
+	}
+	//Hasta aquí todo lo que está en la función es para demostrar el funcionamiento de la matriz del tablero
+	//y para ver cómo recorrer las piezas y sus ubicaciones. Funciona de pana 
+	
+	//Aquí debería empezar a recorrer las piezas y sergún qué pieza es y su ubicación marcar sus posibles movimientos con "x"
+	// en una matriz como la de la línea 24. Se haría de manera similar al for que está en la línea 42. Notar que la pieza no debe 
+	//incluírse en la matriz de las posiciones usadas porque el rey sí podría moverse a donde haya una pieza mientras no esté en jaque.
 	return true; //Por ahora, eso cambiarlo luego
 }
 

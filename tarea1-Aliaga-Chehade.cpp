@@ -36,6 +36,8 @@ bool tableroEnJaqueMate(Tablero &tablero, int cantPiezas){
 	}
 	for(int i = 0; i<cantPiezas; i++){
 		matriz[tablero.piezas_tablero[i].x][tablero.piezas_tablero[i].y] = tablero.piezas_tablero[i].simbolo;
+		//Aquí en vez de poner la pieza, debería separar en condicionales por tipo de pieza y aprovechar sus términos x,y
+		//para poder definir sus futuras jugadas y marcar esos lugares con una X
 	}
 	
 	cout<<"\n";

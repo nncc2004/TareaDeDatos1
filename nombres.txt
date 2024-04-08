@@ -1,2 +1,10 @@
 Nicolás Naim Chehade Casivar 202373508-6
+Programó: Todo lo de la función tableroEnJaqueMate
+	- Detección y marcado de los movimientos de las piezas
+	- Detección de Jaque Mate
+
 Karina Aliega Romero 202373556-6
+Programó: Todo el Main
+	- Apertura del archivo
+	- Extracción de las piezas y sus coordenadas
+	- Creación del struct tablero para almacenar las piezas y sus posiciones

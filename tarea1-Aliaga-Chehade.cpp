@@ -9,7 +9,7 @@ struct Pieza {
 };
 
 struct Tablero {
-	int cantidad_piezas;
+	int cantidad_piezas; //primera línea del archivo
 	Pieza* piezas_tablero; // Lista de piezas que tiene el tablero
 };
 
@@ -286,7 +286,11 @@ int main(){
 			}
 		}
 	}
-	cout<<tableroEnJaqueMate(situacion);
+	if(tableroEnJaqueMate(situacion)){
+		cout<<"Si";
+	}else{
+		cout<<"No";
+	}
 	archivo.close();
 	return 0;
 }
